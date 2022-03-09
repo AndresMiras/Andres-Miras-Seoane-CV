@@ -1,30 +1,12 @@
-function calculaEdad( diaNacimiento, mesNacimiento, anioNacimiento) 
-{
-  var diaNacimiento=diaNacimiento;
-  var mesNacimiento=mesNacimiento;
-  var anioNacimiento=anioNacimiento;
-  var salida=salida;
-  
-        this.diaNacimiento=diaNacimiento;
-        this.mesNacimiento=mesNacimiento;
-        this.anioNacimiento=anioNacimiento;
-    
-        this.edad=function edad()
-        {
-           var calcula=0;
-           var objeto=new Date();
-           var dia=objeto.getDate();
-           var mes= objeto.getMonth()+1;
-           var hoy=objeto.getFullYear();
+function calculaEdad(fecha) {
+    var hoy = new Date();
+    var cumpleanos = new Date(fecha);
+    var edad = hoy.getFullYear() - cumpleanos.getFullYear();
+    var m = hoy.getMonth() - cumpleanos.getMonth();
 
-                if(mes<this.mesNacimiento||(mes==this.mesNacimiento&&dia<this.dia))
-                {
-                  return calcula=parseInt(hoy-this.anioNacimiento)-1; 
-                }
-                else
-                {
-                   return calcula=parseInt(hoy-this.anioNacimiento);  
-                }
-          };
-    salida.innerHTML= "+this.edad()+";
+    if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
+        edad--;
+    }
+
+    return edad;
 }
