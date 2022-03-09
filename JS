@@ -1,9 +1,9 @@
 function calculaEdad( diaNacimiento, mesNacimiento, anioNacimiento) 
 {
-  var diaNacimiento=document.getElementById("dia").value;
-  var mesNacimiento=document.getElementById("mes").value;
-  var anioNacimiento =document.getElementById("anio").value;
-  var salida=document.getElementById("salida");
+  var diaNacimiento=diaNacimiento;
+  var mesNacimiento=mesNacimiento;
+  var anioNacimiento=anioNacimiento;
+  var salida=salida;
   
         this.diaNacimiento=diaNacimiento;
         this.mesNacimiento=mesNacimiento;
