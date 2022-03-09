@@ -10,3 +10,6 @@ function calculaEdad(fecha) {
 
     return edad;
 }
+
+document.querySelectorAll(".anio").forEach((element) => {elemento.innerHTML=calculaEdad("1994/07/21")})
+
