@@ -12,3 +12,12 @@ function calculaEdad(fecha) {
 }
 
 document.querySelectorAll(".anio").forEach((element) => {element.innerHTML=calculaEdad("1994/07/21")})
+
+function MesAnio() {
+    var hoy = new Date();
+    hoy = "0" + hoy.getMonth() + "/" + hoy.getFullYear();
+
+    return hoy;
+}
+
+document.querySelectorAll(".GetToday").forEach((element) => {element.innerHTML=MesAnio()})

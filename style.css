@@ -99,6 +99,7 @@ a .fab {
 }
 
 .course .descrition {
+  /* font-style: italic; */
   -ms-flex: 0 0 66.6%;
   flex: 0 0 66.6%;
   max-width: 66.6%;
@@ -126,6 +127,10 @@ a .fab {
 
 .school, .job-title {
   text-transform: capitalize;
+}
+
+.school place, .school-Place {
+  font-style: italic;
 }
 
 .school span, .job-title span {
