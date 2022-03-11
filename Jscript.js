@@ -12,6 +12,8 @@ function calculaEdad(fecha) {
 }
 
 document.querySelectorAll(".anio").forEach((element) => {element.innerHTML=calculaEdad("1994/07/21")});
+//Sustituye en html el elemento anio por el valor que devuelve la función, en este caso traducirá todos aquellos_
+//valores que contengan el elemento anio.
 
 function MesAnio() {
     var hoy = new Date();
@@ -22,9 +24,11 @@ function MesAnio() {
 }
 
 document.querySelectorAll(".GetToday").forEach((element) => {element.innerHTML=MesAnio()});
+//Sustituye en html el elemento GetToday por el valor que devuelve la función, en este caso traducirá todos aquellos_
+//valores que contengan el elemento GetToday.
 
-// Función para el selector de vida laboral.
 function myFunction() { 
     var x = document.getElementById("mySelect").value;
     document.getElementById("selector").innerHTML = "Has Seleccionado: " + x;
   }
+  // Función para el selector de vida laboral.
