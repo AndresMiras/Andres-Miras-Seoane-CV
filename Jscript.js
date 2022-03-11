@@ -11,13 +11,20 @@ function calculaEdad(fecha) {
     return edad;
 }
 
-document.querySelectorAll(".anio").forEach((element) => {element.innerHTML=calculaEdad("1994/07/21")})
+document.querySelectorAll(".anio").forEach((element) => {element.innerHTML=calculaEdad("1994/07/21")});
 
 function MesAnio() {
     var hoy = new Date();
-    hoy = "0" + hoy.getMonth() + "/" + hoy.getFullYear();
+    const hoyTrans = hoy.getMonth()+1;
+    hoy = "0" + hoyTrans + "/" + hoy.getFullYear();
 
     return hoy;
 }
 
-document.querySelectorAll(".GetToday").forEach((element) => {element.innerHTML=MesAnio()})
+document.querySelectorAll(".GetToday").forEach((element) => {element.innerHTML=MesAnio()});
+
+// Función para el selector de vida laboral.
+function myFunction() { 
+    var x = document.getElementById("mySelect").value;
+    document.getElementById("selector").innerHTML = "Has Seleccionado: " + x;
+  }
