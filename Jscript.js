@@ -29,6 +29,6 @@ document.querySelectorAll(".GetToday").forEach((element) => {element.innerHTML=M
 
 function myFunction() { 
     var x = document.getElementById("mySelect").value;
-    document.getElementById("selector").innerHTML = "Has Seleccionado: " + x;
+    document.getElementById("Selector").innerHTML = "Has Seleccionado: " + x;
   }
   // Función para el selector de vida laboral.

@@ -69,6 +69,18 @@ main section:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
+#Selector {
+  background-color: #1C9C94;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  padding: 5px 8px;
+  margin-top: 10px;
+  margin-left: 30px;
+  border-radius: 3px;
+  word-spacing: 3px;
+}
+
 .fab {
   border: 1px solid white;
   border-radius: 50%;
