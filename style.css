@@ -25,6 +25,11 @@ section{
   padding: 1em;
 }
 
+section span{
+display: block;
+font
+}
+
 header, main, footer {
   margin: 0 auto;
 }
