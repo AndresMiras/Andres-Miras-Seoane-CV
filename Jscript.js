@@ -27,8 +27,49 @@ document.querySelectorAll(".GetToday").forEach((element) => {element.innerHTML=M
 //Sustituye en html el elemento GetToday por el valor que devuelve la función, en este caso traducirá todos aquellos_
 //valores que contengan el elemento GetToday.
 
+function muestraClase(clase){
+    const etiqueta = document.getElementsByClassName(clase);
+    //Recuenta todas las etiquetas que existen en el html.
+    for(let i = 0; i < etiqueta.length; i++){ 
+        etiqueta[i].style.display = '';
+    }
+}
+
+function ocultaClase(clase){
+    const etiqueta = document.getElementsByClassName(clase);
+    //Recuenta todas las etiquetas que existen en el html.
+    for(let i = 0; i < etiqueta.length; i++){
+        etiqueta[i].style.display = 'none';  
+    }
+}
+
 function myFunction() { 
-    var x = document.getElementById("mySelect").value;
-    document.getElementById("Selector").innerHTML = "Has Seleccionado: " + x;
+    var x = document.getElementById("Selector").value;
+
+    if (x === "vidacompleta"){
+        muestraClase("proyects");
+        muestraClase("comercial");
+        muestraClase("programador");
+    }
+
+    if (x === "proyects"){
+        muestraClase("proyects");
+        ocultaClase("comercial");
+        ocultaClase("programador");
+    }
+
+    if (x === "comercial"){
+        ocultaClase("proyects");
+        muestraClase("comercial");
+        ocultaClase("programador");      
+    }
+
+    if (x === "programador"){
+        ocultaClase("proyects");
+        ocultaClase("comercial");
+        muestraClase("programador");
+    }
+
+    document.getElementById("Selector").innerHTML.display;
   }
   // Función para el selector de vida laboral.

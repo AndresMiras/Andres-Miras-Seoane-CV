@@ -20,7 +20,7 @@ article {
   padding:0 1em;
 }
 
-section{
+section {
   margin: 1em;
   padding: 1em;
 }
@@ -121,6 +121,18 @@ a .fab {
   padding-left: 1em;
 }
 
+.proyects {
+  display: '';
+}
+
+.comercial {
+  display: '';
+}
+
+.programador {
+  display: '';
+}
+
 .skills .column {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
@@ -141,7 +153,7 @@ a .fab {
   text-transform: capitalize;
 }
 
-.school place, .school-Place {
+.school, .school-Place {
   font-style: italic;
 }
 
