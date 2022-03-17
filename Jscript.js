@@ -43,7 +43,7 @@ function ocultaClase(clase){
     }
 }
 
-function myFunction() { 
+function myVisor() { 
     var x = document.getElementById("Selector").value;
 
     if (x === "vidacompleta"){
