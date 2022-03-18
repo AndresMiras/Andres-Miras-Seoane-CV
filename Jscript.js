@@ -54,15 +54,15 @@ function myVisor() {
     }
 
     if (x === "proyects"){
-        muestraClase("proyects");
         ocultaClase("comercial");
         ocultaClase("programador");
+        muestraClase("proyects");
     }
 
     if (x === "comercial"){
         ocultaClase("proyects");
-        muestraClase("comercial");
-        ocultaClase("programador");      
+        ocultaClase("programador");
+        muestraClase("comercial");      
     }
 
     if (x === "programador"){
