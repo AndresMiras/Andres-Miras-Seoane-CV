@@ -299,8 +299,13 @@ footer {
   }
 
   .nav {
-    font-size: .7em;
+    font-size: 11px;
   }
+
+  .list__show a {
+    font-size: 9px
+  }
+
   .course .title, .course .descrition {
     max-width: 100%;
   }
@@ -316,7 +321,11 @@ footer {
   }
 
   .nav {
-    font-size: .6em;
+    font-size: 10px;
+  }
+
+  .list__show a {
+    font-size: 8px
   }
 
   footer {
