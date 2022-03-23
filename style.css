@@ -87,6 +87,7 @@ main section:not(:last-child) {
   margin-bottom: 5vh;
   font-family: 'Poppins', sans-serif;
   font-size: calc(1.1vw + 0.4vh); /* vw es el % de tamaño en función del ancho de la página y vh el de la altura */
+  max-
   /* border-bottom: 1px solid #ccc; */
 }
 
@@ -305,14 +306,6 @@ footer {
     display: block;
   }
 
-  /* .nav {
-    font-size: 11px;
-  }
-
-  .list__show a {
-    font-size: 9px
-  } */
-
   .course .title, .course .descrition {
     max-width: 100%;
   }
@@ -329,13 +322,15 @@ footer {
 
   /* .nav {
     font-size: 10px;
-  }
-
-  .list__show a {
-    font-size: 8px
-  } */
+  }*/
 
   footer {
     text-align: center;
+  }
+}
+  
+@media screen and (min-width: 1200px) {
+  .nav {
+     font-size: 12px;
   }
 }
