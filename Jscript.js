@@ -20,7 +20,7 @@ function MesAnio() {
     var hoy = new Date();
     const hoyTrans = hoy.getMonth()+1;
     hoy = "0" + hoyTrans + "/" + hoy.getFullYear();
-
+    // hoy = `0${hoyTrans}/${hoy.getFullYear()}`;
     return hoy;
 }
 
@@ -74,3 +74,23 @@ function myVisor() {
     document.getElementById("Selector").innerHTML.display;
   }
   // Función para el selector de vida laboral.
+
+  let listElements = document.querySelectorAll('.list__button--click');
+
+  listElements.forEach(listElements => {
+        listElements.addEventListener('click', ()=>{
+
+            listElements.classList.toggle('arrow');
+
+            let height = 0;
+            let menu = listElements.nextElementSibling;
+            if(menu.clientHeight == "0"){
+               height=menu.scrollHeight + 5; 
+            }
+
+            menu.style.height = `${height}px`;
+        })
+  });
+
+  //Recorre los elementos desplegables del menú. para abrir los submenús. Pone la clase arrow y la saca.
+  //Además es capaz de saber cuantos píxeles ocupan los submenús para hacer el desplegable.

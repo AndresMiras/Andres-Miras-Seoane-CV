@@ -42,16 +42,65 @@
       </a> -->
     </section>
   </header>
-  <main>
-    <select id="Selector" onchange="myVisor()">
-      <option value="vidacompleta">VIDA LABORAL COMPLETA</option>
-      <option value="proyects">PROYECTISTA DE FLUIDOS</option>
-      <option value="comercial">DESEMPEÑO COMERCIAL</option>
-      <option value="programador">DESEMPEÑO COMO PROGRAMADOR</option>
-    </select>
-    <section>
-      <h3>Cursos & Trabajos</h3>
 
+  <nav class="nav">
+      <ul class="list">
+
+        <li class="list__item">
+          <div class="list__button">
+            <img src="img/icons/hatuni.svg" alt="" class="list__img">
+            <a href="#educacion" class="nav__link">EDUCACIÓN</a>
+          </div>
+        </li>
+
+        <li class="list__item">
+          <div class="list__button">
+            <img src="img/icons/workico.svg" alt="" class="list__img">
+            <a href="#experiencias" class="nav__link">EXPERIENCIAS</a>
+          </div>
+        </li>
+
+        <li class="list__item">
+          <div class="list__button list__button--click">
+            <img src="img/icons/laboralico.svg" alt="" class="list__img">
+            <a href="#" class="nav__link">PROYECTOS</a>  
+            <img src="img/icons/right_arrow.svg" alt="" class="list__arrow"> <!-- flecha señaladora desplegable -->
+          </div>
+          <ul class="list__show">
+            <li class="list__inside">
+              <a href="#" class="nav__link nav__link--inside">CÁLCULO DE TENDIDO ELÉCTRICO</a>
+            </li>
+            <li class="list__inside">
+              <a href="#" class="nav__link nav__link--inside">CÁLCULO DE POTENCIA CÁMARA DE FRÍO</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="list__item">
+          <div class="list__button">
+            <img src="img/icons/contact.svg" alt="" class="list__img">
+            <a href="#contacto" class="nav__link">CONTACTO</a>
+          </div>
+        </li>
+      </ul>
+  </nav>
+
+  <main>
+    <section>
+      <div>
+        <h3>Cursos & Trabajos</h3>
+      </div>
+
+      <div class="list__item--2">
+        <img src="img/icons/lifeico.svg" alt="" class="list__img">
+          <select id="Selector" onchange="myVisor()">
+            <option value="vidacompleta">VIDA LABORAL COMPLETA</option>
+            <option value="proyects">PROYECTISTA DE FLUIDOS</option>
+            <option value="comercial">DESEMPEÑO COMERCIAL</option>
+            <option value="programador">DESEMPEÑO COMO PROGRAMADOR</option>
+          </select>
+      </div>
+      
       <article class="course proyects">
         <div class='title'>
           <h4>Cálculo de Cámaras Frigoríficas</h4>
@@ -101,6 +150,7 @@
 
     </section>
     <section>
+      <a name="educacion"></a> <!-- Etiqueta scroll. -->
       <h3>Conocimientos Programas & Lenguages</h3> 
       <!-- La clase Skills hace referencia a habilidades... -->
       <div class='skills'>
@@ -166,6 +216,7 @@
 
     </section>
     <section>
+      <a name="experiencias"></a> <!-- Etiqueta scroll. -->
       <h3>EXPERIENCIAS:</h3>
 
       <article class="comercial">
@@ -313,6 +364,7 @@
 
     </section>
   </main>
+  <a name="contacto"> <!-- Etiqueta scroll. -->
   <footer>
     <p>Created by: <a href="https://outlook.live.com">Andrés Mirás Seoane (terminadorandre@hotmail.com) </a>  / <a href="https://www.infojobs.net/candidate/cv/view/index.xhtml?dgv=5192284358014738072">Infojobs</a> / 2022 </p>
   </footer>
