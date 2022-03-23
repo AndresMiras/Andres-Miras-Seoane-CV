@@ -96,7 +96,6 @@ main section:not(:last-child) {
   padding: 15px 0;
   text-decoration: none;
   font-weight: bold;
-  tr
 }
 
 .nav__link:hover{
