@@ -175,7 +175,7 @@ main section:not(:last-child) {
 }
 
 .list__show a {
-  font-size: calc((1vw + 1vh)/2); /* vw es el % de tamaño en función del ancho de la página y vh el de la altura */
+  font-size: min(max(14px), 1vw); /* vw es el % de tamaño en función del ancho de la página y vh el de la altura */
   text-align: left;
   line-height : 2vh;
 }
