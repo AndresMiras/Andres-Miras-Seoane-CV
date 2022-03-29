@@ -92,3 +92,22 @@ function myVisor() {
 
   //Recorre los elementos desplegables del menú. para abrir los submenús. Pone la clase arrow y la saca.
   //Además es capaz de saber cuantos píxeles ocupan los submenús para hacer el desplegable.
+
+  //Ahora crearé un botón para que se me desplace a la parte superior de la página.
+
+$(document).ready(function(){
+
+	$('.ir-arriba').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		}, 300);
+	});
+
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > 0 ){
+			$('.ir-arriba').slideDown(300);
+		} else {
+			$('.ir-arriba').slideUp(300);
+		}
+	});
+});
