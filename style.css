@@ -81,6 +81,7 @@ main section:not(:last-child) {
 
 .nav { /*Contenido del navegador*/
   max-width: 75em;
+  max-height: max-content;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
