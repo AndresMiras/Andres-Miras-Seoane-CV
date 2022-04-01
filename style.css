@@ -166,18 +166,18 @@ main section:not(:last-child) {
 .list__show {
   width: 15vw;
   margin-left: 1.5vw;
-  border-left:2px solid #303440;
+  border-left: 2px solid #303440;
   list-style: none;
-  position:relative;
+  position: relative;
   transition: height .4s;
   padding-left: 1.5vw;
-  height: 0;
+  height: 100%;
 }
 
-.list__show li a {
-  font-size: 70%; /* vw es el % de tamaño en función del ancho de la página y vh el de la altura */
+.list__show > li > a {
+  font-size: 75%; /*Herencia*/
   text-align: left;
-  line-height : 2vh;
+  line-height: 135%; /*Es el % de interlineado en función del font-size(tamaño de fuente)*/
 }
 
 /*FIN DEL ESTILO DEL MENU PRINCIPAL*/
