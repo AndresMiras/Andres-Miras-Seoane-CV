@@ -115,12 +115,12 @@ main section:not(:last-child) {
   margin: 10px 2px 10px 2px; 
   display: flex;
   padding-left: 11vw;
-  flex-direction:row;
+  flex-direction: row;
 }
 
 .list__item {
   list-style-type:none;
-  width: 25vw;
+  width: 100%;
   justify-items: center;
   overflow:hidden;
   margin-bottom:auto;
@@ -174,8 +174,8 @@ main section:not(:last-child) {
   height: 0;
 }
 
-.list__show a {
-  font-size: min(max(14px), 1vw); /* vw es el % de tamaño en función del ancho de la página y vh el de la altura */
+.list__show li a {
+  font-size: 70%; /* vw es el % de tamaño en función del ancho de la página y vh el de la altura */
   text-align: left;
   line-height : 2vh;
 }
