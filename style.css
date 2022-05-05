@@ -176,7 +176,7 @@ main section:not(:last-child) {
 }
 
 .list__show > li > a {
-  font-size: 75%; /*Herencia*/
+  font-size: 75%;
   text-align: left;
   line-height: 135%; /*Es el % de interlineado en función del font-size(tamaño de fuente)*/
 }
@@ -302,14 +302,14 @@ footer {
 }
 
 .ir-arriba { /*Icono para regresar al menú principal*/
-	display:none;
-	padding:20px;
+	display: none;
+	padding: 20px;
 	background: #509e98;
 	font-size:20px;
 	cursor:pointer;
 	position: fixed;
-	bottom:20px;
-	right:20px;
+	bottom: 20px;
+	right: 20px;
 }
 
 @media only screen and (max-width: 768px) {
